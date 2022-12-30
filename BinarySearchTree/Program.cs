@@ -75,6 +75,10 @@ namespace BinarySearchTree
                     currentNode = currentNode.rightchild;
             }
         }
+        public inorder(Node ptr)
+        {
+
+        }
     }
     internal class Program
     {
