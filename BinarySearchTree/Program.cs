@@ -92,6 +92,21 @@ namespace BinarySearchTree
 
         public void preorder(Node ptr)
         {
+           if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+           if (ptr != null)
+            {
+                Console.Write(ptr.info + " ");
+                preorder(ptr.leftchild);
+                preorder(ptr.rightchild);
+            }
+        }
+
+        public void postorder(Node ptr) /*Performs the postorder traversal of the tree*/
+        {
 
         }
     }
