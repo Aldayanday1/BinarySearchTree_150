@@ -60,6 +60,10 @@ namespace BinarySearchTree
                 }
             }
         }
+        public void search(string element, ref Node parent, ref Node currentNode)
+        {
+
+        }
     }
     internal class Program
     {
