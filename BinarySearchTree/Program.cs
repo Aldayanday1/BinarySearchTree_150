@@ -89,6 +89,11 @@ namespace BinarySearchTree
                 inorder(ptr.rightchild);
             }
         }
+
+        public void preorder(Node ptr)
+        {
+
+        }
     }
     internal class Program
     {
