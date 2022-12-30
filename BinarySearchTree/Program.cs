@@ -43,6 +43,22 @@ namespace BinarySearchTree
                 Console.WriteLine("Duplicate words not allowed");
                 return;
             }
+            else /*If the spesified node is not present*/
+            {
+                tmp = new Node(element, null, null);
+                if(parent == null) /*If the the trees is empty*/
+                {
+                    ROOT = tmp;
+                }
+                else if (string.Compare(element, parent.info) < 0)
+                {
+                    parent.leftchild = tmp;
+                }
+                else
+                {
+                    parent.rightchild = tmp;
+                }
+            }
         }
     }
     internal class Program
